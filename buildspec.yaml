@@ -1,0 +1,10 @@
+version: 0.2
+phases:
+  install: null
+  runtime-versions: null
+  nodejs: 16
+  post_build: null
+  commands:
+    - aws s3 sync . s3://zuzubucket1
+artifacts:
+  files: "*/"
